@@ -1,0 +1,712 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 10;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header nav ul {
+  display: flex;
+}
+#header nav ul li {
+  margin-right: 55px;
+}
+#header nav ul li a {
+  line-height: 70px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.65px;
+}
+#header nav ul li a:hover {
+  color: #0b1033;
+}
+#header nav ul li a:hover .content {
+  display: block;
+}
+#header nav ul li .content {
+  display: none;
+}
+
+#main #slider {
+  background-size: cover;
+  background-image: url(./img/slider-bg-1.png.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 90px 0 1000px;
+  position: relative;
+  z-index: -1;
+}
+#main #slider .contents {
+  position: absolute;
+  left: 83px;
+  top: 340px;
+  width: 756px;
+}
+#main #slider .contents h1 {
+  text-align: left;
+  line-height: 82px;
+  font-weight: 500;
+  font-size: 66px;
+  height: 163px;
+  font-weight: bold;
+}
+#main #slider .contents p {
+  margin-top: 10px;
+  line-height: 36px;
+  font-weight: bold;
+  font-size: 24px;
+}
+#main #slider .contents .btn {
+  line-height: 55px;
+  font-size: 15px;
+  padding: 0 46px;
+  background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-size: 200% auto;
+  display: inline-block;
+  color: #fff;
+  width: 162px;
+  height: 67px;
+  border: 6px solid rgba(204, 241, 255, 0.5);
+  border-radius: 33px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+#main #slider .contents .btn :hover {
+  background-position: right center;
+}
+#main #slider .image {
+  width: 485px;
+  height: 773px;
+  position: absolute;
+  right: 130px;
+  top: 100px;
+}
+#main #discover .title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#main #discover .title img {
+  padding-bottom: 30px;
+}
+#main #discover .title h6 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c8d93;
+  padding-bottom: 10px;
+}
+#main #discover .title h2 {
+  font-size: 48px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+#main #discover .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #discover .cards .card {
+  text-align: center;
+  padding: 40px 15px 60px 15px;
+  margin: 0 15px 0 15px;
+}
+#main #discover .cards .card img {
+  min-height: 91px;
+}
+#main #discover .cards .card h4 {
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 45px 0 20px 0;
+}
+#main #discover .cards .card p {
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #7c8d93;
+  font-weight: 500;
+  max-width: 290px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+#main #discover .cards .more_btn {
+  background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-size: 200% auto;
+  display: inline-block;
+  transition: all 400ms ease-out;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 55px;
+  border: 6px solid rgba(204, 241, 255, 0.5);
+  border-radius: 33px;
+  padding: 0 46px;
+  opacity: 0;
+}
+#main #discover .cards :hover {
+  box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.11);
+}
+#main #discover .cards :hover .more_btn {
+  opacity: 1;
+}
+#main #best {
+  display: flex;
+  height: 632px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #best .left {
+  background-image: url(./img/best_background.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  position: relative;
+  z-index: -1;
+  width: 514px;
+}
+#main #best .left .text {
+  color: #fff;
+  width: 315px;
+  margin-top: 195px;
+  margin-left: 80px;
+}
+#main #best .left .text h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+#main #best .left .text p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 25px 0 55px 0;
+}
+#main #best .left .chriss {
+  display: flex;
+  margin-left: 80px;
+}
+#main #best .left .chriss .pic img {
+  width: 42px;
+  height: 42px;
+}
+#main #best .left .chriss .about {
+  padding-left: 18px;
+}
+#main #best .left .chriss .about h5 {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  color: #0b1033;
+  padding-bottom: 5px;
+}
+#main #best .left .chriss .about h6 {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+#main #best .right {
+  display: flex;
+  width: 834px;
+}
+#main #best .right .text {
+  width: 517px;
+  padding-left: 80px;
+  padding-top: 100px;
+}
+#main #best .right .text .title {
+  padding-bottom: 55px;
+  width: 432px;
+}
+#main #best .right .text .title img {
+  padding-bottom: 30px;
+}
+#main #best .right .text .title h6 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c8d93;
+  padding-bottom: 10px;
+}
+#main #best .right .text .title h2 {
+  font-size: 48px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#main #best .right .text p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #7c8d93;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  width: 432px;
+}
+#main #best .right .phone {
+  padding-left: 80px;
+  padding-top: 60px;
+  width: 345px;
+  height: 550px;
+}
+#main #best .right .phone img {
+  width: 237px;
+  height: 438px;
+}
+#main #people {
+  display: flex;
+  margin-left: 80px;
+  padding-top: 90px;
+}
+#main #people .lefttext {
+  max-width: 540px;
+}
+#main #people .lefttext .lefttitle {
+  padding-bottom: 55px;
+}
+#main #people .lefttext .lefttitle img {
+  padding-bottom: 30px;
+}
+#main #people .lefttext .lefttitle h6 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c8d93;
+  padding-bottom: 10px;
+}
+#main #people .lefttext .lefttitle h2 {
+  font-size: 48px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#main #people .lefttext p {
+  font-family: "Roboto", sans-serif;
+  color: #7c8d93;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 600;
+  padding-bottom: 45px;
+}
+#main #people .lefttext ul {
+  padding-left: 20px;
+}
+#main #people .lefttext ul li {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+}
+#main #people .lefttext ul li a {
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #7c8d93;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 600;
+  position: relative;
+  transition: all 400ms linear 0s;
+}
+#main #people .lefttext ul li a:hover {
+  color: #a6d7ff;
+}
+#main #people .lefttext ul li a::before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #a6d7ff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 400ms linear 0s;
+}
+#main #people .rightpic {
+  max-width: 591px;
+  margin-bottom: -20px;
+  margin-left: 150px;
+}
+#main #people .rightpic img {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  width: 286px;
+  height: 286px;
+}
+#main #getintouch {
+  padding-top: 100px;
+}
+#main #getintouch .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 20px;
+  margin-left: 80px;
+}
+#main #getintouch .container form {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
+#main #getintouch .container form input {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+  border-radius: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #a5bbd0;
+}
+#main #getintouch .container form textarea {
+  height: 200px;
+  width: 540px;
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+  border-radius: 0;
+  padding: 15px 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #a5bbd0;
+  resize: none;
+}
+#main #getintouch .container form .name {
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 50px;
+}
+#main #getintouch .container form .name input {
+  width: 100%;
+}
+#main #getintouch .container form .email {
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 50px;
+}
+#main #getintouch .container form .email input {
+  width: 100%;
+}
+#main #getintouch .container form .subject {
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 50px;
+}
+#main #getintouch .container form .subject input {
+  width: 100%;
+}
+#main #getintouch .container form .message {
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+#main #getintouch .container form button {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+  background-size: 200% auto;
+  z-index: 2;
+  width: 176px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 58px;
+  border: 6px solid rgba(204, 241, 255, 0.5);
+  border-radius: 33px;
+}
+#main #getintouch .container .details {
+  margin-left: 90px;
+  width: 500px;
+}
+#main #getintouch .container .details .titledetails {
+  padding-bottom: 55px;
+}
+#main #getintouch .container .details .titledetails img {
+  padding-bottom: 30px;
+}
+#main #getintouch .container .details .titledetails h6 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c8d93;
+  padding-bottom: 10px;
+}
+#main #getintouch .container .details .titledetails h2 {
+  font-size: 48px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#main #getintouch .container .details p {
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #7c8d93;
+}
+#main #getintouch .container .details a h5 {
+  font-size: 18px;
+  color: #97ccfe;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  display: block;
+  padding: 50px 0 20px 0;
+}
+#main #getintouch .container .details a h4 {
+  font-size: 30px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#main #map {
+  padding: 100px 0;
+}
+#main #map .container {
+  width: 1110px;
+  text-align: center;
+  margin-left: 100px;
+  position: relative;
+}
+#main #map .container img {
+  max-width: 100%;
+}
+#main #map .container .office {
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  top: 32%;
+  max-width: 550px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 46px 15px rgba(0, 0, 0, 0.15);
+  border-left: 8px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, #9b8aff 0%, #6ebcfe 100%);
+     border-image: linear-gradient(to bottom, #9b8aff 0%, #6ebcfe 100%);
+  border-image-slice: 1;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  padding-left: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+#main #map .container .office h3 {
+  font-size: 15px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+#main #map .container .office p {
+  color: #7c8d93;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-block;
+}
+#main #map .container .office h4 {
+  display: inline-block;
+  padding-left: 50px;
+}
+#main #map .container .office h4 a {
+  display: block;
+  color: #7c8d93;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+#footer .pic {
+  background: url(./img/footer_background.webp);
+  padding: 130px 0 115px 0;
+  background-size: cover;
+  width: 100%;
+}
+#footer .pic .widget {
+  margin-right: 15px;
+  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .pic .widget .text {
+  padding-right: 35px;
+  width: 370px;
+  height: 190px;
+}
+#footer .pic .widget .text img {
+  padding-bottom: 55px;
+}
+#footer .pic .widget .text p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#footer .pic .widget .images {
+  width: 350px;
+  height: 239px;
+}
+#footer .pic .widget .images .title {
+  padding-bottom: 45px;
+}
+#footer .pic .widget .images .title h3 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#footer .pic .widget .images ul {
+  width: 352px;
+  height: 176px;
+}
+#footer .pic .widget .images ul li {
+  width: 25%;
+  float: left;
+  height: 88px;
+}
+#footer .pic .widget .images ul li a {
+  display: inline-block;
+  padding: 1px;
+  width: 88px;
+  height: 88px;
+}
+#footer .pic .widget .images ul li a img {
+  width: 100%;
+}
+#footer .pic .widget .mail {
+  margin-left: 65px;
+  padding-right: 15px;
+  width: 350px;
+}
+#footer .pic .widget .mail .title {
+  padding-bottom: 45px;
+}
+#footer .pic .widget .mail .title h3 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#footer .pic .widget .mail input {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  height: 52px;
+  padding: 0 30px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #9b9b9b;
+  background-color: #fff;
+  line-height: 1.5;
+}
+#footer .pic .widget .mail button {
+  margin-top: 25px;
+  background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+  background-size: 200% auto;
+  width: 176px;
+  text-align: center;
+  border-radius: 33px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 58px;
+  border: 6px solid rgba(204, 241, 255, 0.5);
+}
+#footer .pic .widget .mail button:hover {
+  border-color: #8cc4fb;
+}
+#footer .lastpart {
+  background: #11173b;
+  padding: 35px 0;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#footer .lastpart .text {
+  width: 893px;
+  height: 29px;
+}
+#footer .lastpart .text h5 {
+  font-size: 14px;
+  color: #2a2f56;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 29px;
+}
+#footer .lastpart .text h5 a {
+  color: #007bff;
+}
+#footer .lastpart .text h5 a:hover {
+  color: #0056b3;
+}
+#footer .lastpart .icons {
+  width: 252px;
+  height: 29px;
+}
+#footer .lastpart .icons ul {
+  display: flex;
+}
+#footer .lastpart .icons ul li {
+  margin-right: 32px;
+}
+#footer .lastpart .icons ul li a {
+  font-size: 14px;
+  color: #2a2f56;
+}
+#footer .lastpart .icons ul li a i {
+  font: 14px;
+}
+#footer .lastpart .icons ul li a:hover {
+  color: white;
+}/*# sourceMappingURL=file.css.map */
